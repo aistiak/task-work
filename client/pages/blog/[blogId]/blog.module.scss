@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    .title {
+
+    }
+    .content {
+        border: 1px dotted;
+        padding: 2%;
+        max-width: 900px;
+    }
+    .voting {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        & >div {
+            margin-right: 20px;
+        }
+    }
+    .post__comment {
+        & > textarea {
+            width: 400px;
+            margin-top: 20px;
+
+        }
+    }
+    .comments{
+        margin-top: 30px;
+        .comment__list{
+            display: flex;
+            flex-direction: column;
+            & > div {
+                border: 1px dotted;
+                max-width: 400px;
+                margin-top: 20px;
+                // padding: 1%;
+            }
+        }
+    }
+}
